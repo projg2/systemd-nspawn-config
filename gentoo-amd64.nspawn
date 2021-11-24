@@ -1,0 +1,14 @@
+[Files]
+Bind=/tmp/dist
+Bind=/var/cache/binpkg
+BindReadOnly=/home/mgorny/git/gentoo
+BindReadOnly=/home/mgorny/git/python
+BindReadOnly=/etc/portage
+BindReadOnly=/var/db/repos
+BindReadOnly=/usr/local
+
+[Network]
+Private=off
+
+[Exec]
+Capability=CAP_NET_ADMIN
