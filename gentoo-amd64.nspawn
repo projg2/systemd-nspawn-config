@@ -1,14 +1,21 @@
 [Files]
+# DISTDIR
 Bind=/tmp/dist
+# PKGDIR
 Bind=/var/cache/binpkg
+# local repository checkouts
 BindReadOnly=/home/mgorny/git/gentoo
 BindReadOnly=/home/mgorny/git/python
+# Portage configuration files
 BindReadOnly=/etc/portage
+# repositories
 BindReadOnly=/var/db/repos
+# local tools
 BindReadOnly=/usr/local
 
 [Network]
 Private=off
 
 [Exec]
+# this is necessary for Portage network-sandbox to work correctly
 Capability=CAP_NET_ADMIN
