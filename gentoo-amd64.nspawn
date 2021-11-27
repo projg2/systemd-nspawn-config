@@ -8,7 +8,7 @@ BindReadOnly=/home/mgorny/git/gentoo
 BindReadOnly=/home/mgorny/git/python
 # Portage configuration files
 # (we need writable overlay since some packages install there)
-Overlay=/etc/portage:+/etc/portage:/etc/portage
+Overlay=/etc/portage:+/etc/portage.up:/etc/portage
 # repositories
 BindReadOnly=/var/db/repos
 # local tools
