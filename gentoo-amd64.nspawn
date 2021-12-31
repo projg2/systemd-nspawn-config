@@ -13,6 +13,7 @@ Bind=/etc/portage
 BindReadOnly=/var/db/repos
 # local tools
 BindReadOnly=/usr/local
+TemporaryFileSystem=/run/lock
 
 [Network]
 Private=off
